@@ -1,7 +1,19 @@
 require_relative '../lib/Dark_trader'
 
-describe "get_townhall_email" do
-    it "gets townhall email" do
-      expect(get_townhall_email(AVERNES)).to eq("mairie.avernes@orange.fr")
+#va tester l'app du trader fou
+
+describe "the Dark_trader" do 
+    it "gives the name of the currency" do
+      #test du nom de la crypto monnaie
+      expect(name_currency)).to eq("BCH")
+      expect(name_currency)).to eq("THETA")
     end
-end
+ end
+
+ describe "the Dark_trader" do
+    it "gives the price of the currency" do
+      #test du prix de la crypto monnaie
+      expect(price_currency)).to eq("231.13")
+      expect(price_currency)).to eq("0.089943")
+    end
+ end
